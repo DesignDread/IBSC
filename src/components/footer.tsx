@@ -1,16 +1,20 @@
+
+"use client";
 import React from 'react';
 import { Instagram, Facebook, Twitter, Youtube } from 'lucide-react';
+import Image from 'next/image';
+import WhiteLogo from "../../public/ibsc logo _white.svg";
 
 export default function BankingFooter() {
   return (
     <footer className="w-full">
       {/* Main footer section with gradient background */}
-      <div className="bg-gradient-to-r from-blue-900 via-teal-800 to-green-600 text-white p-8">
+      <div className="bg-gradient-to-r pt-12 from-[#004165] to-[#00893B]  text-white p-8">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
           
           {/* Column 1: Logo and about */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <div className="h-10 w-10 rounded-full border-2 border-white flex items-center justify-center">
                 <div className="h-6 w-6 rounded-full border border-white"></div>
               </div>
@@ -19,7 +23,8 @@ export default function BankingFooter() {
                 <div>SKILLS AND CAREER</div>
               </div>
             </div>
-            
+             */}
+             <Image src={WhiteLogo} alt="IBSC Logo" className="" priority></Image>        
             <p className="text-sm">
               IBSC: shaping the future of banking with accredited courses and expert career support. Join us today!
             </p>
@@ -69,7 +74,8 @@ export default function BankingFooter() {
       </div>
       
       {/* Copyright bar */}
-      <div className="bg-blue-900 text-white p-4 text-center text-sm">
+    <div className="h-[0px] bg-white opacity-20 my-[0.5px]"></div>
+      <div className=" bg-gradient-to-r text-white from-[#004165] to-[#00893B]  p-4 text-center text-sm">
         © Copyright 2025 Job Jaro. All Rights Reserved.
       </div>
     </footer>

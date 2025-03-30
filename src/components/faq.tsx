@@ -100,7 +100,7 @@ export default function ProfessionalFAQSection() {
       <div className="max-w-3xl mx-auto relative z-10">
         {/* Heading with animation */}
         <h2 
-          className={`text-2xl md:text-3xl font-bold text-center text-blue-900 mb-10 relative transition-all duration-1000 ${
+          className={`text-2xl md:text-3xl font-bold text-center text-[#012245] mb-10 relative transition-all duration-1000 ${
             isVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform -translate-y-8'
           }`}
         >
@@ -136,7 +136,7 @@ export default function ProfessionalFAQSection() {
                   aria-controls={`faq-answer-${index}`}
                 >
                   <span className={`font-medium transition-colors duration-300 ${
-                    openIndex === index ? 'text-[#012245]' : 'text-blue-900'
+                    openIndex === index ? 'text-[#012245]' : 'text-[#012245]'
                   }`}>{faq.question}</span>
                   
                   <span className={`flex items-center justify-center w-8 h-8 rounded-full transition-all duration-300 ${
@@ -168,7 +168,7 @@ export default function ProfessionalFAQSection() {
       </div>
       
       {/* Decorative elements that animate into view */}
-      {/* <div className={`absolute top-0 left-0 w-64 h-64 rounded-full bg-blue-900 opacity-5 transition-all duration-1500 ${
+      {/* <div className={`absolute top-0 left-0 w-64 h-64 rounded-full bg-[#012245] opacity-5 transition-all duration-1500 ${
         isVisible ? 'transform translate-y-0 scale-100' : 'transform -translate-y-full scale-0'
       }`} style={{ transitionDelay: '200ms' }}></div>
       

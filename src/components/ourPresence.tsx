@@ -47,7 +47,7 @@ export default function OurPresenceMap() {
             transition: 'opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s'
           }}
         >
-          <h2 className="text-4xl font-bold text-blue-900">
+          <h2 className="text-4xl font-bold text-[#012245]">
             Our Presence
           </h2>
           
