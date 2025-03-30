@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from 'react';
-import { Book, Award, Building } from 'lucide-react';
 import Hero from "../../public/Hero.svg"
 import Image from 'next/image';
 import Home1 from "../../public/Home1.svg"

@@ -105,7 +105,6 @@
 
 
 
-import { Metadata } from "next";
 import MentorAndTestimonal from "@/components/mentorAndTestimonals"
 import WhyUs from "@/components/whyUs"
 import HomeHero from "@/components/home"

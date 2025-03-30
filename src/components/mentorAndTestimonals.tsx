@@ -109,9 +109,9 @@ export default function TopMentors() {
   const title = "Our Top Mentors"
   const subtitle = "All our mentors are industry experts with 10+ years of banking experience"
   const buttonText = "Talk with mentors now"
-  const averageSalary = "9.6 LPA"
-  const salaryCardImage = "/placeholder.svg?height=100&width=100"
-  const salaryCardName = "Rahul Gupta"
+//   const averageSalary = "9.6 LPA"
+//   const salaryCardImage = "/placeholder.svg?height=100&width=100"
+//   const salaryCardName = "Rahul Gupta"
 
   // Refs for scroll animations
   const headerRef = useRef(null)
@@ -292,7 +292,7 @@ interface Mentor {
   expertise: string[];
 }
 
-function MentorCard({ mentor, index }: { mentor: Mentor; index: number }) {
+function MentorCard({ mentor }: { mentor: Mentor; index: number }) {
   const [isFlipped, setIsFlipped] = useState(false)
 
   return (
@@ -376,7 +376,7 @@ interface Testimonial {
   package: string;
 }
 
-function TestimonialCard({ testimonial, index }: { testimonial: Testimonial; index: number }) {
+function TestimonialCard({ testimonial }: { testimonial: Testimonial; index: number }) {
   return (
     <motion.div
       variants={{
