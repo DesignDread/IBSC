@@ -6,6 +6,9 @@ import Home1 from "../../public/Home1.svg"
 import Home2 from "../../public/Home2.svg"
 import Home3 from "../../public/Home3.svg"
 import { motion, AnimatePresence } from 'framer-motion';
+import Kotak3d from "../../public/kotakLogo3.svg"
+import Axis3d from "../../public/Axis3d.svg"
+import PlayButton from "../../public/Play Button.svg"
 
 export default function BankingCareerHero() {
   const [videoOpen, setVideoOpen] = useState(false);
@@ -80,7 +83,21 @@ export default function BankingCareerHero() {
   };
   
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className=" w-full my-6 mt-32 overflow-hidden">
+      <motion.div 
+        className='absolute right-24 top-32 hidden lg:block z-10 w-[174px]'
+        animate={{ y: [0, -10, 0] }}
+        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+      >
+        <Image src={Kotak3d} alt='' />
+      </motion.div>
+      <motion.div 
+        className='absolute left-24 top-[32rem] lg:block hidden z-10 w-[174px]'
+        animate={{ y: [-10, 0, -10] }}
+        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+      >
+        <Image src={Axis3d} alt='' />
+      </motion.div>
       {/* Striped background pattern */}
       <div className="absolute inset-0 w-full h-full z-0">
         <div className="flex flex-col h-full">
@@ -92,21 +109,29 @@ export default function BankingCareerHero() {
       </div>
       
       {/* Content container */}
-      <div className="relative z-10 py-8 mx-auto px-4 md:px-6">
+      <div className="relative  z-10 py-8 mx-auto px-4 md:px-6">
         {/* Heading and subheading */}
+       <div className='text-center'>
+       <div className='bg-[#01883C33]/80 rounded-full inline p-2 relative mx-auto'
+        >
+        Crafted with 45+ years of experience
+        </div>
+       </div>
         <motion.div 
-          className="text-center mb-8 bg-white bg-opacity-90 py-6 md:py-8 rounded-lg"
+          className="text-center mb-8  bg-opacity-90   rounded-lg"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <motion.h1 
-            className="text-2xl sm:text-3xl lg:text-[48px] font-bold text-[#012245] mb-4 px-2"
+          <motion.i
+            className="text-2xl sm:text-3xl lg:text-[70px]
+            font-bold text-[#012245] mb-4 px-2"
             variants={headingVariants}
             initial="hidden"
             animate={isVisible ? "visible" : "hidden"}
           >
-            Launch Your Banking Career in {" "}
+            Launch Your Banking Career  {" "}
+            <br/>
             <motion.span 
               className="text-green-600"
               animate={{ 
@@ -114,25 +139,23 @@ export default function BankingCareerHero() {
               }}
               transition={{ duration: 3, repeat: Infinity }}
             >
-              Just 100 Days
+           In Just 100 Days
             </motion.span>
-          </motion.h1>
+          </motion.i>
           
           <motion.p 
-            className="text-lg sm:text-xl lg:text-[48px] text-[#012245] mb-6 md:mb-8 px-2 mx-auto"
+            className="text-lg sm:text-xl lg:text-[17px] max-w-6xl font-medium
+             text-[#012245] mb-6 md:mb-8 px-2 mx-auto"
             variants={headingVariants}
             initial="hidden"
             animate={isVisible ? "visible" : "hidden"}
             transition={{ delay: 0.3 }}
           >
-            Industry-recognized training + BFSI-SSC Certification + 
-            <span className="hidden sm:inline"><br/></span>
-            <span className="sm:hidden"> </span>
-            Guaranteed Placement Support
+            Ace your banking exams with IBSC, the AI-driven coaching platform that guarantees top scores. Join a network of 50,000+ successful candidates and elevate your career with strategic insights and personalized learning paths.
           </motion.p>
           
           {/* Feature icons */}
-          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 md:gap-6 px-2">
+          {/* <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 md:gap-6 px-2">
             {[
               { icon: Home1, text: "100-Day Comprehensive Course", index: 0 },
               { icon: Home2, text: "Complete Placement Support", index: 1 },
@@ -157,13 +180,14 @@ export default function BankingCareerHero() {
                 <span className='text-base sm:text-lg lg:text-[20px] text-[#012245]'>{feature.text}</span>
               </motion.div>
             ))}
-          </div>
+          </div> */}
         </motion.div>
 
         {/* Responsive video section */}
-        <div className='flex flex-col md:flex-row items-center gap-4 md:gap-6'>
+        <div className='flex w-full'>
+        <div className='flex mx-auto flex-col md:flex-row items-center gap-4 md:gap-6'>
           {/* Left stripes - hidden on small screens */}
-          <div className='hidden md:flex flex-col gap-5 w-[552px]'>
+          {/* <div className='hidden md:flex flex-col gap-5 w-[552px]'>
             {[...Array(8)].map((_, i) => (
               <motion.div 
                 key={i}
@@ -175,10 +199,10 @@ export default function BankingCareerHero() {
                 style={{ originX: 0 }}
               ></motion.div>
             ))}
-          </div>
+          </div> */}
 
           {/* Top stripes for mobile - shown only on small screens */}
-          <motion.div 
+          {/* <motion.div 
             className='flex md:hidden w-full'
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
@@ -186,35 +210,43 @@ export default function BankingCareerHero() {
             style={{ originX: 0 }}
           >
             <div className='h-[12px] w-full bg-gradient-to-r from-[#004165] to-[#00893B]'></div>
-          </motion.div>
+          </motion.div> */}
           
           {/* Video thumbnail */}
           <motion.div 
-            className="relative mx-auto w-full md:max-w-xl rounded-lg overflow-hidden cursor-pointer shadow-lg" 
+            className="relative  px-4 py-3 md:max-w-xl rounded-lg overflow-hidden cursor-pointer shadow-lg bg-gradient-to-r from-[#004165]/20 to-[#00893B]/20 text-black " 
             onClick={() => setVideoOpen(true)}
             variants={videoContainerVariants}
             initial="hidden"
             animate={isVisible ? "visible" : "hidden"}
             whileHover="hover"
           >
-            <Image
-              src={Hero}
-              alt="Banking career students"
-              className="w-full object-cover"
-            />
+            <Image src={PlayButton} alt='' className='inline'></Image> More Info
             {/* Play button overlay */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <motion.div 
-                className="w-12 h-12 sm:w-16 sm:h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center"
+              {/* <motion.div 
+                className="w-12 h-12 sm:w-16 sm:h-16   bg-opacity-80 rounded-full flex items-center justify-center"
                 animate={pulseAnimation}
-              >
-                <div className="w-0 h-0 border-t-6 sm:border-t-8 border-b-6 sm:border-b-8 border-t-transparent border-b-transparent border-l-10 sm:border-l-12 border-l-green-600 ml-1"></div>
-              </motion.div>
+              > */}
+                {/* <div className="w-0 h-0 border-t-6 sm:border-t-8 border-b-6 sm:border-b-8 border-t-transparent border-b-transparent border-l-10 sm:border-l-12 border-l-green-600 ml-1"></div> */}
+              {/* </motion.div> */}
             </div>
+          </motion.div>
+          <motion.div 
+            className="relative  px-4 py-4 md:max-w-xl rounded-lg overflow-hidden cursor-pointer shadow-lg bg-gradient-to-r from-[#004165] to-[#00893B] text-white " 
+            onClick={() => setVideoOpen(true)}
+            variants={videoContainerVariants}
+            initial="hidden"
+            animate={isVisible ? "visible" : "hidden"}
+            whileHover="hover"
+          >
+            Get Started
+            {/* Play button overlay */}
+            
           </motion.div>
 
           {/* Bottom stripes for mobile - shown only on small screens */}
-          <motion.div 
+          {/* <motion.div 
             className='flex md:hidden w-full'
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
@@ -222,10 +254,10 @@ export default function BankingCareerHero() {
             style={{ originX: 1 }}
           >
             <div className='h-[12px] w-full bg-gradient-to-r from-[#00893B] to-[#f4fbff]'></div>
-          </motion.div>
+          </motion.div> */}
           
           {/* Right stripes - hidden on small screens */}
-          <div className='hidden md:flex flex-col gap-5 w-[552px]'>
+          {/* <div className='hidden md:flex flex-col gap-5 w-[552px]'>
             {[...Array(8)].map((_, i) => (
               <motion.div 
                 key={i}
@@ -237,20 +269,21 @@ export default function BankingCareerHero() {
                 style={{ originX: 1 }}
               ></motion.div>
             ))}
-          </div>
+          </div> */}
+        </div>
         </div>
 
         {/* Bottom text */}
         <motion.div 
-          className="text-center mt-6 max-w-xl mx-auto bg-white bg-opacity-90 p-4 rounded-lg"
+          className="text-center mt-6 max-w-2xl mx-auto   bg-opacity-90 p-4 rounded-lg"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 1 }}
         >
-          <p className="text-[#102245] font-medium text-base sm:text-lg lg:text-[20px]">
-            Upskill, grow, and get hired — land your first job and build a 
-            stable, successful, and future-ready career in banking.
-          </p>
+          <i className="text-[#8B8B8B]  text-base sm:text-lg lg:text-[20px]">
+          *Flexible learning schedule, cancel anytime.* <br/>
+          *Immediate feedback on practice tests, monthly performance reviews.*
+          </i>
         </motion.div>
       </div>
       

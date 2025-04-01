@@ -1,7 +1,7 @@
 "use client" 
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import Map from "../../public/Map.svg"  
+import Map from "../../public/map2.svg"  
 
 export default function OurPresenceMap() {
   // State to track if component is in view
@@ -37,10 +37,10 @@ export default function OurPresenceMap() {
         transition: 'opacity 0.8s ease, transform 0.8s ease'
       }}
     >
-      <div className="max-w-6xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+      <div className="max-w-6xl mx-auto px-4 flex flex-col  items-center gap-12">
         {/* Left content section */}
         <div 
-          className="w-full lg:w-1/2 space-y-6"
+          className="w-full  space-y-6"
           style={{
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? 'translateX(0)' : 'translateX(-20px)',
@@ -62,7 +62,7 @@ export default function OurPresenceMap() {
 
         {/* Right map section */}
         <div 
-          className="w-full lg:w-1/2 relative h-[600px]"
+          className="w-full lg:w-fullative h-[600px]"
           style={{
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? 'scale(1)' : 'scale(0.95)',

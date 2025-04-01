@@ -7,7 +7,7 @@ import Partner from "../../public/Partner.svg"
 
 export default function BankingHeader() {
   return (
-    <header className="w-full">
+    <header className="w-full z-20 relative">
       {/* Top bar - dark teal with contact info and BFSI logo */}
       <div className="bg-gradient-to-r from-[#004165] to-[#00893B]  text-white  flex justify-between items-center text-sm">
         <div className="ml-4 md:ml-32">
