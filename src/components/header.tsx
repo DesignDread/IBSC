@@ -24,7 +24,7 @@ export default function BankingHeader() {
             <span className="hidden md:inline">+91 7710505505</span>
           </a>
           <div>
-            <img src="/api/placeholder/40/20" alt="BFSI Logo" className="h-6" />
+            {/* <img src="/api/placeholder/40/20" alt="BFSI Logo" className="h-6" /> */}
           </div>
         </div>
       </div>
