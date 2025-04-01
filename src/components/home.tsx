@@ -53,14 +53,14 @@ export default function BankingCareerHero() {
   return (
     <div className=" w-full my-6  overflow-hidden">
       <motion.div 
-        className='absolute right-24 top-28 hidden lg:block z-10 w-[174px]'
+        className='absolute right-24 top-20 hidden lg:block z-10 w-[174px]'
         animate={{ y: [0, -10, 0] }}
         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
       >
         <Image src={Kotak3d} alt='' />
       </motion.div>
       <motion.div 
-        className='absolute left-24 top-[32rem] lg:block hidden z-10 w-[174px]'
+        className='absolute left-24 top-[24rem] lg:block hidden z-10 w-[174px]'
         animate={{ y: [-10, 0, -10] }}
         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
       >
