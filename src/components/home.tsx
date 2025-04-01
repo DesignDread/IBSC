@@ -1,10 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import Hero from "../../public/Hero.svg"
+
 import Image from 'next/image';
-import Home1 from "../../public/Home1.svg"
-import Home2 from "../../public/Home2.svg"
-import Home3 from "../../public/Home3.svg"
 import { motion, AnimatePresence } from 'framer-motion';
 import Kotak3d from "../../public/kotakLogo3.svg"
 import Axis3d from "../../public/Axis3d.svg"
@@ -28,31 +25,10 @@ export default function BankingCareerHero() {
     }
   };
   
-  const featureVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: (i: number) => ({ 
-      opacity: 1, 
-      x: 0,
-      transition: { 
-        duration: 0.5, 
-        delay: 0.6 + (i * 0.2),
-        ease: "easeOut" 
-      }
-    })
-  };
+
   
-  const stripesVariants = {
-    hidden: { opacity: 0, scaleX: 0 },
-    visible: (i: number) => ({ 
-      opacity: 1, 
-      scaleX: 1,
-      transition: { 
-        duration: 0.8, 
-        delay: 0.3 + (i * 0.05),
-        ease: "easeInOut" 
-      }
-    })
-  };
+  
+  
   
   const videoContainerVariants = {
     hidden: { opacity: 0, scale: 0.9 },
@@ -72,15 +48,7 @@ export default function BankingCareerHero() {
     }
   };
   
-  const pulseAnimation = {
-    scale: [1, 1.1, 1],
-    opacity: [0.7, 1, 0.7],
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-      repeatType: "loop" as const
-    }
-  };
+
   
   return (
     <div className=" w-full my-6 mt-32 overflow-hidden">
