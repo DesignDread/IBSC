@@ -159,7 +159,7 @@ export default function TopMentors() {
         className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12"
       >
         <div>
-          <h2 className="text-3xl font-bold lg:text-[48px] text-[#012245] mb-2">{title}</h2>
+          <h2 className="text-3xl font-bold lg:text-[80px] text-[#012245] mb-2">{title}</h2>
           <p className="text-sm text-[#012245] lg:text-[20px]  max-w-md">{subtitle}</p>
         </div>
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -223,14 +223,14 @@ export default function TopMentors() {
           >
             <h2 className="text-2xl lg:text-[30px] text-[#012245] mb-2">Hear it From Them</h2>
             <div className="flex items-center mb-8">
-              <h3 className="text-lg font-bold text-[#012245] lg:text-[48px] mr-2">Ambitious People</h3>
+              <h3 className="text-lg font-bold text-[#012245] lg:text-[80px] mr-2">Ambitious People</h3>
               <motion.div
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ repeat: Number.POSITIVE_INFINITY, repeatDelay: 2, duration: 0.5 }}
               >
                 <Heart className="w-10 h-10 fill-red-500 text-red-500" />
               </motion.div>
-              <span className="font-bold text-[#012245] lg:text-[48px] ml-1">IBSC</span>
+              <span className="font-bold text-[#012245] lg:text-[80px] ml-1">IBSC</span>
             </div>
           </motion.div>
 

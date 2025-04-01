@@ -57,9 +57,9 @@ export default function BankingCertificateAd() {
       animate="visible"
       variants={containerVariants}
     >
-      <motion.div className='max-w-6xl mx-auto text-[#012245]' variants={itemVariants}>
+      <motion.div className='max-w-6xl mx-auto pt-12 text-[#012245]' variants={itemVariants}>
         <motion.h1 
-          className='text-3xl lg:text-[48px]'
+          className='text-3xl lg:text-[70px]'
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}

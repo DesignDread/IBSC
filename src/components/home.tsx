@@ -28,7 +28,7 @@ export default function BankingCareerHero() {
 
   
   
-  
+
   
   const videoContainerVariants = {
     hidden: { opacity: 0, scale: 0.9 },
@@ -51,9 +51,9 @@ export default function BankingCareerHero() {
 
   
   return (
-    <div className=" w-full my-6 mt-32 overflow-hidden">
+    <div className=" w-full my-6  overflow-hidden">
       <motion.div 
-        className='absolute right-24 top-32 hidden lg:block z-10 w-[174px]'
+        className='absolute right-24 top-28 hidden lg:block z-10 w-[174px]'
         animate={{ y: [0, -10, 0] }}
         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
       >
@@ -80,9 +80,9 @@ export default function BankingCareerHero() {
       <div className="relative  z-10 py-8 mx-auto px-4 md:px-6">
         {/* Heading and subheading */}
        <div className='text-center'>
-       <div className='bg-[#01883C33]/80 rounded-full inline p-2 relative mx-auto'
+       <div className='bg-[#01883C33]/70 rounded-full inline p-2 relative mx-auto'
         >
-        Crafted with 45+ years of experience
+        The BEST banking course Crafted with 45+ years of experience
         </div>
        </div>
         <motion.div 
@@ -98,10 +98,10 @@ export default function BankingCareerHero() {
             initial="hidden"
             animate={isVisible ? "visible" : "hidden"}
           >
-            Launch Your Banking Career  {" "}
+            Get Your Dream Banking Job  {" "}
             <br/>
             <motion.span 
-              className="text-green-600"
+              className="text-green-600 pb-2"
               animate={{ 
                 color: ["#00893B", "#00a347", "#00893B"],
               }}
@@ -193,7 +193,7 @@ export default function BankingCareerHero() {
             {/* Play button overlay */}
             <div className="absolute inset-0 flex items-center justify-center">
               {/* <motion.div 
-                className="w-12 h-12 sm:w-16 sm:h-16   bg-opacity-80 rounded-full flex items-center justify-center"
+                className="w-12 h-12 sm:w-16 sm:h-16   bg-opacity-70 rounded-full flex items-center justify-center"
                 animate={pulseAnimation}
               > */}
                 {/* <div className="w-0 h-0 border-t-6 sm:border-t-8 border-b-6 sm:border-b-8 border-t-transparent border-b-transparent border-l-10 sm:border-l-12 border-l-green-600 ml-1"></div> */}
@@ -283,7 +283,7 @@ export default function BankingCareerHero() {
                 Close &times;
               </motion.button>
               {/* This would be your actual video player in production */}
-              <div className="w-full h-full flex items-center justify-center bg-gray-800">
+              <div className="w-full h-full flex items-center justify-center bg-gray-700">
                 <p className="text-white text-center p-4">Video player would appear here.<br/>.</p>
               </div>
             </motion.div>

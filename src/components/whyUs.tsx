@@ -237,9 +237,9 @@ export default function IBSCFeatures() {
       `}</style>
 
       {/* Alumni Section */}
-      <div ref={alumniRef} className="py-4 sm:py-6 md:py-8  text-center alumni-section animate-on-scroll relative overflow-hidden">
+      <div ref={alumniRef} className="py-4 pt-12 sm:py-6 md:py-8  text-center alumni-section animate-on-scroll relative overflow-hidden">
         {/* <div className="absolute w-full h-2 top-0 left-0 bg-gradient-to-r from-[#004165] to-[#00893B] opacity-20"></div> */}
-        <h3 className="text-base sm:text-lg lg:text-lg font-medium text-center mb-3 sm:mb-4 md:mb-6 px-4 section-title opacity-0 lg:text-[32px]" style={{ animation: "fadeInUp 0.8s ease-out 0.2s forwards" }}>Our Alumni Works In</h3>
+        <h3 className="text-base sm:text-lg lg:text-lg font-medium text-center mb-3 sm:mb-4 md:mb-6 px-4 section-title opacity-0 lg:text-[56px] pt-12" style={{ animation: "fadeInUp 0.8s ease-out 0.2s forwards" }}>Our Alumni Works In</h3>
         <div className="flex justify-center items-center flex-wrap gap-2 sm:gap-3 md:gap-4 px-3 sm:px-4 md:space-x-4 md:flex-nowrap">
           {[Alumni1, Alumni2, Alumni3, Alumni4, Alumni5, Alumni6, Alumni7].map((logo, index) => (
             <div key={index} className="alumni-logo opacity-0 transition-all duration-300 hover:scale-110" style={{ transitionDelay: `${index * 0.1}s` }}>
@@ -252,7 +252,7 @@ export default function IBSCFeatures() {
       {/* Why Choose IBSC Section */}
       <div ref={whyRef} className="py-6 sm:py-8 md:py-12 bg-white why-section animate-on-scroll">
         <div className="section-title opacity-0" style={{ animation: "fadeInUp 0.8s ease-out 0.4s forwards" }}>
-          <h2 className="text-xl sm:text-2xl lg:text-2xl font-bold text-center mb-6 sm:mb-8 md:mb-12 lg:text-[48px] px-4 gradient-text bg-gradient-to-r from-[#004165] to-[#00893B] bg-clip-text text-transparent">Why Choose IBSC?</h2>
+          <h2 className="text-xl sm:text-2xl lg:text-2xl font-bold text-center mb-6 sm:mb-8 md:mb-12 lg:text-[70px] px-4 gradient-text bg-gradient-to-r from-[#004165] to-[#00893B] bg-clip-text text-transparent">Why Choose IBSC?</h2>
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto px-4 sm:px-6">
@@ -287,7 +287,7 @@ export default function IBSCFeatures() {
       {/* Who Is IBSC For Section */}
       <div ref={whoRef} className="py-6 sm:py-8 md:py-12 bg-gradient-to-r from-[#004165] to-[#00893B] text-white who-section animate-on-scroll">
         <div className="section-title opacity-0" style={{ animation: "fadeInUp 0.8s ease-out 0.6s forwards" }}>
-          <h2 className="text-xl sm:text-2xl lg:text-2xl font-bold text-center mb-6 sm:mb-8 md:mb-12 px-4 lg:text-[48px]">Who Is IBSC For?</h2>
+          <h2 className="text-xl sm:text-2xl lg:text-2xl font-bold text-center mb-6 sm:mb-8 md:mb-12 px-4 lg:text-[70px]">Who Is IBSC For?</h2>
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-7xl mx-auto px-4 sm:px-6">

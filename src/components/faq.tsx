@@ -100,7 +100,7 @@ export default function ProfessionalFAQSection() {
       <div className="max-w-3xl mx-auto relative z-10">
         {/* Heading with animation */}
         <h2 
-          className={`text-2xl md:text-3xl font-bold text-center text-[#012245] mb-10 relative transition-all duration-1000 ${
+          className={`text-2xl md:text-3xl lg:text-[70px] font-bold text-center text-[#012245] mb-10 relative transition-all duration-1000 ${
             isVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform -translate-y-8'
           }`}
         >
